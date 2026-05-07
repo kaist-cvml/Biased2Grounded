@@ -4,13 +4,13 @@
 
 Authors:
 [Na Min An*](https://namin-an.github.io/)
-[Inha Kang*](https://img.shields.io/badge/license-MIT-1D9E75)
+[Inha Kang*](https://2na-97.github.io)
 [Minhyun Lee](https://scholar.google.com/citations?user=2hUlCnQAAAAJ&hl=en&oi=ao)
 [Hyunjung Shim](https://scholar.google.com/citations?user=KB5XZGIAAAAJ&hl=en)
 
 <a href="https://arxiv.org/abs/2509.23098"><img src="https://img.shields.io/badge/Paper-arXiv:2509.23098-red"></a>
 
-<p align="center" width="100%"><img src="./assets/main_overview.pdf" alt="B2G Overview"></img></p>   
+<p align="center" width="100%"><img src="./assets/b2g_overview.png" alt="B2G Overview"></img></p>   
 
 </div>
 
@@ -28,9 +28,8 @@ Through layer-wise investigation, we surface two coupled consequences of this ov
 - **Vision:** embeddings exhibit weak sensitivity to positional cues, limiting spatial grounding.
 - **Language:** multilingual text embeddings form language-dependent geometric shifts within the shared representation space.
 
-Motivated by these findings, we identify an underexplored pathway within VLE mid-layers to construct a spatial map, improving zero-shot RIS by **+1–7 mIoU** across nine RefCOCO benchmarks. Leveraging mixed-language mid-layer embeddings yields further gains (**+7–8 mIoU and IoU@50**) and also improves zero-shot text-to-image retrieval accuracy. Our work opens up the discussion on the effects of representational bias probing in VLEs for enhanced spatial grounding.
 
-### Contributions
+### 💡 Contributions
 
 - **Layer-wise bias analysis** — reveals that final-layer VLE representations suppress positional sensitivity and exhibit language-dependent geometric drift in multilingual settings.
 - **Mid-layer spatial map** — identifies a spatial grounding pathway in VLE mid-layers applicable for zero-shot RIS without task-specific training.
@@ -57,6 +56,8 @@ uv pip install spacy==3.7.6
 
 python -m spacy download en_core_web_lg
 ```
+
+Checkpoint: [Mask2Former](https://dl.fbaipublicfiles.com/maskformer/mask2former/coco/panoptic/maskformer2_swin_large_IN21k_384_bs16_100ep/model_final_f07440.pkl) 
 
 ---
 
