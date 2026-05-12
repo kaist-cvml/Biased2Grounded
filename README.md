@@ -87,9 +87,9 @@ bash infer.sh
 bash infer_baseline.sh 
 bash infer_pmaponly.sh # p-map only ablation
 
-# run multilingual evaluation (text-side only)
+# run multilingual evaluation
 bash run.sh
-bash run_baselin.sh
+bash run_baseline.sh
 bash run_comparison.sh # final-layer centroid
 ```
 
